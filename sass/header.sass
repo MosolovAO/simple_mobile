@@ -1,0 +1,126 @@
+@import "bourbon"
+@import "vars.sass"
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+	background-image: url(/img/background.jpg)
+h1, h2
+	text-transform: uppercase
+.posibility-container
+	padding-bottom: 127px
+	padding-top: 70px
+	position: relative
+.project-container
+	padding-bottom: 20px
+	padding-top: 30px
+	position: relative
+.content_bg
+	background-color: #ebebeb
+.content_bg_white
+	background-color: #fff
+.hidden
+	display: none
+.main_mnu
+	padding: 30px
+	color: #fff
+	opacity: 3
+	position: relative
+	background-color: #ccc
+	z-index: 3
+	&::before
+		content: ''
+		position: absolute
+		background-image: url(/img/bg_mnu.jpg)
+		background-repeat: repeat
+		width: 100%
+		height: 115px
+		top: 0
+		left: 0
+		opacity: .85
+
+.mnu
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+		list-style-type: none
+		a
+			padding: 55px 23px 21px 23px
+			color: #fefefe
+			text-decoration: none
+			font-weight: bold
+			margin: -1px
+			text-shadow: 1px 1px 1px #181818
+			transition: all .5s ease
+			&:hover
+				background-color: $main-color
+		.active
+			background-color: $main-color
+
+.slider
+	.flexslider
+		background-image: url(/img/bg_slider.jpg)
+		background-position: center center
+		background-size: cover
+		border: none
+		border-radius: 0px
+		padding: 50px
+		margin-bottom: 89px
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 55px
+			bottom: -55px
+			left: 0
+			background-image: url(/img/slider_shadow.png)
+			background-repeat: no-repeat
+			background-position: center 0
+			opacity: .7
+		.slides
+			text-align: center
+			img
+				width: 70%
+				margin: 0 auto
+			h2
+				color: #fff
+				text-transform: uppercase
+				font-family: "OpenSans", sans-serif
+				background-color: $main-color
+				display: inline-block
+				position: relative
+				text-align: center
+				padding: 16px 120px
+				font-size: em(27px)
+				font-weight: normal
+				margin: 15px 0 0 0
+				width: 90%
+			h3
+				margin: 0
+				display: inline-block
+				background-color: #fff
+				padding: 14px 40px
+				width: 65%
+				font-size: em(14px)
+				color: #555
+				font-weight: normal
+.flex-direction-nav
+	a
+		&::before
+			display: none!important
+	.flex-next
+		background-image: url(/img/slider_nav.png)
+		background-position: -68px 0px
+		width: 68px
+		height: 69px
+	.flex-prev
+		background-image: url(/img/slider_nav.png)
+		background-position: 0px 0px
+		width: 68px
+		height: 69px
