@@ -104,7 +104,7 @@
 }
 
 .elastislide-horizontal nav span {
-	top: 52%;
+	top: 50%;
 	left: 8px;
 	margin-top: -11px;
 }
@@ -124,6 +124,6 @@
 
 .elastislide-vertical nav span.elastislide-next {
 	bottom: 10px;
-	top: 52%;
+	top: 50%;
 	background-position: -17px -18px;
 }
