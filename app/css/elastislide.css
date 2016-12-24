@@ -8,7 +8,7 @@
 }
 
 .no-js .elastislide-list {
-	display: block;
+	display: inline-block;
 }
 
 .elastislide-carousel ul li {
@@ -19,19 +19,18 @@
 	position: relative;
 	background-color: #fff;
 	margin: 0 auto;
-	min-height: 60px;
+	min-height: 100px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .elastislide-wrapper.elastislide-loading {
-	background-image: url(../images/loading.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .elastislide-horizontal {
-	padding: 0 25px;
-	background-color: #ff4800;
+	padding: 0px 25px 15px 25px;
+	background-color: #ebebeb;
 }
 
 .elastislide-vertical {
@@ -62,7 +61,7 @@
 }
 
 .elastislide-carousel ul li {
-	margin: 0;
+	margin: 10px;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -81,8 +80,7 @@
 }
 
 .elastislide-carousel ul li a img {
-	display: block;
-	border: 2px solid white;
+	display: inline-block;
 	max-width: 100%;
 }
 
@@ -90,22 +88,24 @@
 
 .elastislide-wrapper nav span {
 	position: absolute;
-	background: url(/img/arrow.png) no-repeat 0px 4px;
+	background-color: red;
+	top: 12px;
 	width: 9px;
-	height: 22px;
-	border-radius: 50%;
+	height: 100%;
 	text-indent: -9000px;
 	cursor: pointer;
 	opacity: 0.8;
+	width: 20px;
+
 }
+
 
 .elastislide-wrapper nav span:hover {
 	opacity: 1.0
 }
 
 .elastislide-horizontal nav span {
-	top: 52%;
-	left: 8px;
+	left: 0px;
 	margin-top: -11px;
 }
 
