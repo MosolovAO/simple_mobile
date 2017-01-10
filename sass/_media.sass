@@ -6,15 +6,46 @@
 @media only screen and (max-width : 1200px)
 	/**/
 
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-
+	.main_mnu
+		padding: 30px 0 4px 0!important
+		&::before
+			height: 145px!important
+	.mnu
+		margin: 0 0 10px 20px!important
+		li
+			a
+				padding: 5px 23px 5px 23px!important
+				margin: 10px 0!important
+	.bg_outblog
+		h2
+			padding: 30px 0!important
+	.breadcrumb
+		padding: 10px 0
+		p
+			margin: 0
+	.logo
+		margin: 0 0 20px 20px!important
+	.footer_mail
+		h2
+			font-size: em(16px)
+			text-align: center
+			padding: 0
+			margin: 10px 0
+		form
+			margin-bottom: 15px
+		.footer_mail_name
+			width: 273px
+		.footer_mail_mail
+			width: 273px
+		.footer_mail_button
+			padding: 7px 40px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -35,12 +66,32 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
-
-
+	.logo
+		img
+			width: 100px
+			display: block
+			margin: 0 auto
+	.mnu
+		li
+			a
+				font-size: 14px!important
+	.main_mnu
+		&::before
+			height: 119px!important
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
+	.footer_mail_name
+		margin-bottom: 5px
+		display: block
+		margin: 10px auto
+	.footer_mail_mail
+		margin-bottom: 5px
+		display: block
+		margin: 10px auto
+	.footer_mail_button
+		margin: 0 auto
+		display: block
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -72,4 +123,3 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
-

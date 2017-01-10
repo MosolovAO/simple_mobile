@@ -1,6 +1,6 @@
 @import "bourbon"
 @import "vars.sass"
-
+@import "_media.sass"
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
@@ -24,6 +24,8 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 //Custom Styles Here
+.border_grey
+	border-right: 1px solid #e7e7e7
 .posibility
 	position: relative
 	text-align: center
@@ -162,7 +164,6 @@ body textarea:required:valid
 		&:hover
 			color: #ccc
 .bg_outblog
-	position: relative
 	h2
 		z-index: 5
 		margin: 0
@@ -249,8 +250,52 @@ body textarea:required:valid
 		transition: all .5s ease
 		&:hover
 			background-color: #999
+.widjet_category
+	padding: 60px 0 0 0
+	position: relative
+	h3
+		color: #555
+	ul
+		margin: 0
+		padding: 0 0 0 5px
+		li
+			list-style-type: none
+	a
+		font-size: em(18px)
+		margin-left: 15px
+		color: $main-color
+	&::after
+		content: ''
+		position: absolute
+		width: 110%
+		height: 1px
+		left: -15px
+		bottom: -15px
+		background-color: #e7e7e7
+.widjet_tags
+	padding: 20px 0 0 0
+	h3
+		color: #555
+	a
+		margin: 0 0 15px 20px
+		display: inline-block
+		font-size: em(12px)
+		position: relative
+		background-color: $main-color
+		padding: 0 5px 0px 0
+		color: #fff
+		&::before
+			content: ''
+			position: absolute
+			display: inline-block
+			width: 15px
+			height: 19px
+			left: -15px
+			top: 0
+			background-image: url(/img/tag.png)
+
 //ALWAYS END
-@import "media"
+
 
 //Load Libs SASS
 @import "app/libs/animate/animate.sass"
